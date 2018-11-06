@@ -1,0 +1,12 @@
+{
+  "extends": [],
+  "defaultSeverity": "warning",
+  "allowSyntheticDefaultImports": true,
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
