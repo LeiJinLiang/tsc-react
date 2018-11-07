@@ -1,0 +1,25 @@
+/*
+ * @Author: jinlei 
+ * @Date: 2018-11-02 15:30:31 
+ * @Last Modified by: jinlei
+ * @Last Modified time: 2018-11-02 15:33:33
+ */
+
+export const INCREMENT_ENTHUSIASM = 'INCREMENT_ENTHUSIASM'
+export type INCREMENT_ENTHUSIASM = typeof INCREMENT_ENTHUSIASM
+
+export const DECREMENT_ENTHUSIASM = 'DECREMENT_ENTHUSIASM'
+export type DECREMENT_ENTHUSIASM = typeof DECREMENT_ENTHUSIASM
+
+
+export const ADD_TODO_SUCCESS = 'ADD_TODO_SUCCESS'
+export type ADD_TODO_SUCCESS = typeof ADD_TODO_SUCCESS
+
+export const ADD_TODO_FAILURE = 'ADD_TODO_FAILURE'
+export type ADD_TODO_FAILURE = typeof ADD_TODO_FAILURE
+
+export const ADD_TODO_STARTED = 'ADD_TODO_STARTED'
+export type ADD_TODO_STARTED = typeof ADD_TODO_STARTED
+
+export const DELETE_TODO = 'DELETE_TODO'
+export type DELETE_TODO = typeof DELETE_TODO
