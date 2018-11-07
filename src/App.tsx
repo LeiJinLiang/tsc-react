@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StatefulCounterWithDefaultProps } from './components/StatefulCounterWithDefaultProps'
+import MouseProvider from './Usage/MouseProvider'
 
 interface IState {
   count : number;
@@ -16,13 +16,9 @@ class App extends React.Component<{},IState>{
   }
 
   public render() {
-    const { count } = this.state
     return (
       <div className="App">
-        <StatefulCounterWithDefaultProps 
-          label='start'
-          initialCount={count}
-        />
+        <MouseProvider />
       </div>
     );
   }

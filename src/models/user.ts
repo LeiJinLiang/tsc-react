@@ -2,8 +2,13 @@
  * @Author: jinlei 
  * @Date: 2018-11-06 15:48:07 
  * @Last Modified by: jinlei
- * @Last Modified time: 2018-11-06 16:08:20
+ * @Last Modified time: 2018-11-07 11:10:09
  */
+
+ 
+ /**
+  * 实现该接口的类都必须实现接口的方法serialize()
+  */
 import * as cuid from 'cuid';
 
 export interface IUserDTO {
