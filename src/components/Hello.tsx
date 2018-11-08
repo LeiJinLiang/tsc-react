@@ -7,16 +7,23 @@ export interface Props {
     onDecrement?: ()=> void;
 }
 
+
+interface defaultProps {
+    readonly enthusiasmLevel: number;
+}
+
+
 const getExclamationMarks = (numberCharts : number) => (
     Array(numberCharts+1).join('!')
 )
 
-class Hello extends React.Component<Props> {
-    constructor(props : Props){
-        super(props)
-    }
+const Hello : React.ComponentClass<Props> = 
+class extends  React.Component<Props & defaultProps> {
+    static defaultProps: defaultProps = {
+        enthusiasmLevel : 1
+     }
     render() {
-        const { name , enthusiasmLevel = 1, onDecrement , onIncrement } = this.props
+        const { name , enthusiasmLevel, onDecrement , onIncrement } = this.props
         return(
             <div className='hello'>
                 <div className='greeting'>
