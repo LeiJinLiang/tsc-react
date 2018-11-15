@@ -1,6 +1,6 @@
 export interface AsyncStoreState {
     isFetching : boolean;
     fetched : boolean;
-    payload : [];
+    payload : any[];
     err : null
 }

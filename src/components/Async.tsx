@@ -1,7 +1,12 @@
 import * as React from 'react'
+/**
+ *  data : [
+ * { id : '1', name : '', info : {}}
+ * ]
+ */
 
 export interface AsyncProps {
-    data : []
+    data : any[]
 }
 
 const Async : React.SFC<AsyncProps> = props =>{
@@ -9,7 +14,7 @@ const Async : React.SFC<AsyncProps> = props =>{
     return(
         <ul>
             {data.map((item,idx)=>(
-                <li key = {idx}><strong>{2222}</strong></li>
+                <li key = {idx}><strong>{item.id}</strong></li>
             ))}
         </ul>
     )

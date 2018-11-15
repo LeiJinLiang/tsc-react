@@ -8,14 +8,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { store } from './store'
-import Hello from './containers/index'
+import  store  from './store'
+import AsyncContainer from './containers/asyncCon'
 import registerServiceWorker from './registerServiceWorker';
 
 
 ReactDOM.render(
   <Provider store={store}>
-    <Hello />
+    <AsyncContainer />
   </Provider>,
   document.getElementById('root') as HTMLElement
 );

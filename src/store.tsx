@@ -1,8 +1,10 @@
-import { createStore } from 'redux'
-import { enthusiasm } from './reducers'
-import { StoreState } from './types'
+import { createStore, applyMiddleware} from 'redux'
+import thunk from 'redux-thunk'
+import reducer from './reducers/async'
 
-export const store = createStore<StoreState,any,any,any>(enthusiasm,{
-    enthusiasmLevel : 1,
-    languageName : 'Typescript'
-})
+
+
+const middleware = applyMiddleware(thunk)
+const store = createStore(reducer,middleware)
+
+export default store
